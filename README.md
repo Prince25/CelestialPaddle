@@ -15,8 +15,6 @@
 - **JavaScript**: Core game development
 - **HTML/CSS**: Game container and styling
 
-Enjoy your journey through the stars with **Celestial Paddle**!
-
 ## TODO
 
 - Add score / stats
@@ -29,3 +27,5 @@ Enjoy your journey through the stars with **Celestial Paddle**!
 
 ## LICENSE
 This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it as you wish.
+
+Enjoy your journey through the stars with **Celestial Paddle**!

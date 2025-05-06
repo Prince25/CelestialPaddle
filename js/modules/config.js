@@ -13,7 +13,7 @@ const PADDLE_GRADIENT_END = [142, 68, 173];   // Purple accent
 const PADDLE_GLOW_COLOR = [120, 220, 255];    // Much brighter blue for the glow
 
 // Ball settings
-const BALL_SIZE = 50;
+const BALL_SIZE = 10;
 const BALL_SPEED = 8;
 const MAX_BALL_SIZE = 50;                     // Maximum size the ball can be enlarged to
 
