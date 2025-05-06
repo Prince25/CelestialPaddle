@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celestial Paddle</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- p5.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/addons/p5.sound.min.js"></script>
+
+  <!-- Game Scripts -->
+  <script src="js/modules/config.js"></script>
+  <script src="js/modules/gameState.js"></script>
+  <script src="js/modules/paddle.js"></script>
+  <script src="js/modules/ball.js"></script>
+  <script src="js/modules/blocks.js"></script>
+  <script src="js/modules/collision.js"></script>
+  <script src="js/modules/renderer.js"></script>
+  <script src="js/modules/update.js"></script>
+  <script src="js/modules/preload.js"></script>
+  <script src="js/celestialPaddle.js"></script>
+</head>
+
+<body>
+  <div class="stars" id="starfield"></div>
+
+  <script>
+    // Generate stars
+    const starfield = document.getElementById('starfield');
+    const starCount = 150; // Number of stars
+
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+
+      // Random position
+      const x = Math.random() * 100;
+      const y = Math.random() * 100;
+
+      // Random size (1-4px)
+      const size = Math.random() * 3 + 1;
+
+      // Random twinkle duration (3-8s)
+      const duration = Math.random() * 5 + 3;
+
+      // Random delay so stars don't all twinkle together
+      const delay = Math.random() * 8;
+
+      star.style.left = `${x}%`;
+      star.style.top = `${y}%`;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.setProperty('--duration', `${duration}s`);
+      star.style.animationDelay = `${delay}s`;
+
+      starfield.appendChild(star);
+    }
+  </script>
+</body>
+
+</html>
