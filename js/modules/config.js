@@ -30,7 +30,7 @@ const BLOCK_PADDING = 2;
 // Powerup Block settings
 const MULTIPLY_POWERUP_BLOCK_COLOR = [255, 215, 0];   // Color for ball multiplier
 const MULTIPLY_POWERUP_BLOCK_CHANCE = 0.01;           // Chance for a ball multiplier powerup block
-const ENLARGE_POWERUP_BLOCK_COLOR = [255, 105, 180];  // Color for ball enlargement
+const ENLARGE_POWERUP_BLOCK_COLOR = [100, 255, 0];    // Color for ball enlargement
 const ENLARGE_POWERUP_BLOCK_CHANCE = 0.01;            // Chance for a ball enlargement powerup block
 const ENLARGE_POWERUP_FACTOR = 1.25;                  // Ball enlargement factor in percentage
 const ENLARGE_POWERUP_BALL_SIZE = BALL_SIZE * ENLARGE_POWERUP_FACTOR;
