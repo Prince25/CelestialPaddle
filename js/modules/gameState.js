@@ -13,12 +13,15 @@ let currentState = GameStates.START;
 
 // Handle game state changes
 function handleGameStateChange(newState) {
+  const previousState = currentState;
+
   // If we're leaving the VICTORY state, clear confetti
   if (currentState === GameStates.VICTORY && newState !== GameStates.VICTORY) {
     victoryActive = false;
     confetti = [];
   }
 
+  // Update the current state
   currentState = newState;
 
   // Additional logic when changing states
@@ -34,6 +37,11 @@ function handleGameStateChange(newState) {
     victoryActive = true;
     createConfetti();
   } else if (newState === GameStates.START) {
+    // Reset stats if coming from victory screen
+    if (previousState === GameStates.VICTORY) {
+      resetStats();
+    }
+
     if (blocks.length === 0) {
       createBlocks();
     }

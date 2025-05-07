@@ -115,6 +115,9 @@ function updateBalls(canvasWidth, canvasHeight) {
       if (ball.y > canvasHeight) {
         balls.splice(i, 1); // Remove this ball
         ballsLost++;
+        
+        // Increment the balls lost counter in stats
+        increaseBallsLost();
       }
     } else {
       // Ball follows paddle until launched

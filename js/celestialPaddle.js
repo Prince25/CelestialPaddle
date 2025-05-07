@@ -35,6 +35,7 @@ function setupGame() {
   initPaddle(GAME_WIDTH, GAME_HEIGHT);  // modules/paddle.js
   resetBalls();                         // modules/ball.js
   createBlocks();                       // modules/blocks.js
+  resetStats();                         // modules/stats.js
 }
 
 // --- Key Handlers ---
@@ -51,6 +52,7 @@ function handleSpaceKey() {
 
 function handleRKeyPress() {
   if (currentState === GameStates.GAME_OVER) {
+    resetStats();     // modules/stats.js
     createBlocks();   // modules/blocks.js
     resetBalls();     // modules/ball.js
   }

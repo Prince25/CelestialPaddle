@@ -35,3 +35,6 @@ const ENLARGE_POWERUP_BLOCK_CHANCE = 0.01;            // Chance for a ball enlar
 const ENLARGE_POWERUP_FACTOR = 1.25;                  // Ball enlargement factor in percentage
 const ENLARGE_POWERUP_BALL_SIZE = BALL_SIZE * ENLARGE_POWERUP_FACTOR;
 const ENLARGE_POWERUP_DURATION = 10000;               // Duration in milliseconds
+
+// Stats settings
+const SCORE_PER_BLOCK = 10; // Points awarded for each block destroyed

@@ -59,6 +59,9 @@ function drawGameScreen() {
   drawBalls();  // modules/balls.js
   drawBlocks(); // modules/blocks.js
 
+  // Draw stats
+  drawStats();  // modules/stats.js
+
   // Draw confetti if victory is active
   drawConfetti(); // modules/blocks.js
 }
@@ -85,6 +88,9 @@ function drawGameOverScreen() {
   drawPaddle(); // modules/paddle.js
   drawBalls();  // modules/balls.js
   drawBlocks(); // modules/blocks.js
+  
+  // Draw stats
+  drawStats();  // modules/stats.js
 
   // Draw game over text
   fill(255);
@@ -119,6 +125,9 @@ function drawVictoryScreen() {
   drawPaddle(); // modules/paddle.js
   drawBalls();  // modules/balls.js
   drawBlocks(); // modules/blocks.js
+  
+  // Draw stats
+  drawStats();  // modules/stats.js
 
   // Draw confetti
   drawConfetti(); // modules/blocks.js

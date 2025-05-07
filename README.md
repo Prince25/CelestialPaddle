@@ -4,7 +4,7 @@
 
 ## Gameplay
 
-In each round, you control the paddle to keep the ball in play and break all the blocks on the board. As you progress, the ball bounces off the paddle and blocks, and you must prevent it from falling below the paddle. Clear all blocks to win the round!
+You control the paddle to keep the ball in play and break all the blocks on the board. As you progress, the ball bounces off the paddle and blocks, and you must prevent it from falling below the paddle.
 
 - **Left Arrow / A**: Move paddle left
 - **Right Arrow / D**: Move paddle right
@@ -23,11 +23,10 @@ There are special powerup blocks:
 
 ## TODO
 
-- Add score / stats
-  - Blocks destroyed
-  - Balls lost
 - Add sounds
 - More powerups
+  - Lava ball (destroys blocks without colliding)
+  - Explosion block
 - Fix paddle glow
 - ...
 

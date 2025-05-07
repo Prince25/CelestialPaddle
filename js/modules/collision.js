@@ -88,8 +88,16 @@ function checkBlockCollisions() {
   
   // Remove all blocks marked for destruction (starting from highest index)
   const sortedIndices = Array.from(destroyedBlockIndices).sort((a, b) => b - a);
-  for (const index of sortedIndices) {
-    removeBlock(index);
+  
+  // Update score and remove blocks
+  if (sortedIndices.length > 0) {
+    // Increment score by points per block * number of blocks
+    increaseScore(SCORE_PER_BLOCK * sortedIndices.length);
+    
+    // Remove blocks
+    for (const index of sortedIndices) {
+      removeBlock(index);
+    }
   }
   
   // Check if all blocks are destroyed
